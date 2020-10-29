@@ -1,5 +1,5 @@
 <?php
-	#Only habdle GET requests
+	#Only handle GET requests
 	if($_SERVER['REQUEST_METHOD'] == 'GET') {
 		#Grab the numbers and operation
 		$num1 = $_GET['num1'];
@@ -11,7 +11,7 @@
 		exit();
 		if ($op === "+" || $op === "-" || $op === "*" || $op === "/" || $op === "**"){
 			#Do math
-			$n1 = floatval(num1);
+			$n1 = floatval($num1);
 			$n2 = floatval($num2);
 			
 			$result = Null;
