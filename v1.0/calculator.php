@@ -7,8 +7,6 @@
 		$op = $_GET['operation'];
 		
 		#validate the input
-		echo($op);
-		exit();
 		if ($op === "+" || $op === "-" || $op === "*" || $op === "/" || $op === "**"){
 			#Do math
 			$n1 = floatval($num1);
