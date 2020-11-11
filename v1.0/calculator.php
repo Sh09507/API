@@ -1,6 +1,17 @@
 <?php
 	#Only handle GET requests
 	if($_SERVER['REQUEST_METHOD'] == 'GET') {
+		
+		$headers = apache_request_headers();
+		// var_dump($headers);
+		
+		// $token = headers['Authorization'];
+		
+		// if ($token !== 'Basic kiibo') {
+			// http_response_code(401);
+			// exit();
+		// }
+		
 		#Grab the numbers and operation
 		$num1 = $_GET['num1'];
 		$num2 = $_GET['num2'];
