@@ -3,7 +3,7 @@
 	$headers = apache_request_headers();
 		// var_dump($headers);
 		
-	$token = headers['Authorization'];
+	$token = $headers['Authorization'];
 		
 		if ($token !== 'Basic kiibo') {
 			http_response_code(401);
