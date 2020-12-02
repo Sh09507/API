@@ -3,7 +3,7 @@
     
     $token = $headers['Authorization'];
     
-    if ($token !== 'Basic Basic kiibo') {
+    if ($token !== 'Basic kiibo') {
         http_response_code(401);
         exit();
     }
